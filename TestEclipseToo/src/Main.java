@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main 
 {
 
@@ -37,7 +39,7 @@ public class Main
 		
 		boolean x = true;
 		boolean ac = false;
-		System.out.println("\n\n");
+		/*System.out.println("\n\n");
 		//System.out.println(x = ac);
 		if(x == ac){
 			System.out.println("Chana!!!");
@@ -57,11 +59,35 @@ public class Main
 		else {
 			System.out.println("Ni moñazo!!!");
 		}
-		
-		
+		*/
 		
 		
 		System.out.println("\n\n");
+		
+		String opcion = "Chana";
+		Scanner lector = new Scanner(System.in);
+		opcion = lector.nextLine();
+		
+		switch(opcion){
+		case "Chana":
+			System.out.println("Chana!!");
+			break;
+	
+		case "Juana":
+		System.out.println("Juana!!");
+		break;
+		
+		case "Chona":
+		System.out.println("Chona!!");
+		break;
+		
+		default:
+		System.out.println("Ninguno!!");
+		break;
+	
+		
+		}
+		
 		
 	}
 }
